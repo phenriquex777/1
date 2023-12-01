@@ -1,0 +1,25 @@
+// src/components/MeuComponente.js
+import React from 'react';
+
+function MeuComponente(props) {
+  return (
+    <div>
+      <h1>{props.mensagem}</h1>
+    </div>
+  );
+}
+
+export default MeuComponente;
+// src/App.js
+import React from 'react';
+import MeuComponente from './components/MeuComponente';
+
+function App() {
+  return (
+    <div className="App">
+      <MeuComponente mensagem="Esta é a mensagem passada como prop!" />
+    </div>
+  );
+}
+
+export default App;
